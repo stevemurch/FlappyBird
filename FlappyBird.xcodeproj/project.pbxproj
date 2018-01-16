@@ -15,6 +15,19 @@
 		AA85D274200A9B870097442E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA85D272200A9B870097442E /* Main.storyboard */; };
 		AA85D276200A9B870097442E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA85D275200A9B870097442E /* Assets.xcassets */; };
 		AA85D279200A9B870097442E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA85D277200A9B870097442E /* LaunchScreen.storyboard */; };
+		AA85D285200A9BE90097442E /* pipe1.png in Resources */ = {isa = PBXBuildFile; fileRef = AA85D280200A9BE80097442E /* pipe1.png */; };
+		AA85D286200A9BE90097442E /* pipe2.png in Resources */ = {isa = PBXBuildFile; fileRef = AA85D281200A9BE80097442E /* pipe2.png */; };
+		AA85D287200A9BE90097442E /* flappy2.png in Resources */ = {isa = PBXBuildFile; fileRef = AA85D282200A9BE80097442E /* flappy2.png */; };
+		AA85D288200A9BE90097442E /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = AA85D283200A9BE80097442E /* bg.png */; };
+		AA85D289200A9BE90097442E /* flappy1.png in Resources */ = {isa = PBXBuildFile; fileRef = AA85D284200A9BE90097442E /* flappy1.png */; };
+		AA85D28E200E79310097442E /* FireParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = AA85D28C200E79310097442E /* FireParticle.sks */; };
+		AA85D28F200E79310097442E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA85D28D200E79310097442E /* Assets.xcassets */; };
+		AA85D291200E7B410097442E /* Explosion+1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AA85D290200E7B410097442E /* Explosion+1.mp3 */; };
+		AA85D293200E822D0097442E /* MenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = AA85D292200E822D0097442E /* MenuScene.sks */; };
+		AA85D295200E82D60097442E /* start-button.png in Resources */ = {isa = PBXBuildFile; fileRef = AA85D294200E82D50097442E /* start-button.png */; };
+		AA85D297200E846F0097442E /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA85D296200E846F0097442E /* MenuViewController.swift */; };
+		AA85D299200E8FC00097442E /* achievement1.wav in Resources */ = {isa = PBXBuildFile; fileRef = AA85D298200E8FC00097442E /* achievement1.wav */; };
+		AA85D29B200E93850097442E /* MagicParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = AA85D29A200E93850097442E /* MagicParticle.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +41,19 @@
 		AA85D275200A9B870097442E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA85D278200A9B870097442E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA85D27A200A9B870097442E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA85D280200A9BE80097442E /* pipe1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pipe1.png; sourceTree = "<group>"; };
+		AA85D281200A9BE80097442E /* pipe2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pipe2.png; sourceTree = "<group>"; };
+		AA85D282200A9BE80097442E /* flappy2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flappy2.png; sourceTree = "<group>"; };
+		AA85D283200A9BE80097442E /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		AA85D284200A9BE90097442E /* flappy1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flappy1.png; sourceTree = "<group>"; };
+		AA85D28C200E79310097442E /* FireParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FireParticle.sks; sourceTree = "<group>"; };
+		AA85D28D200E79310097442E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA85D290200E7B410097442E /* Explosion+1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Explosion+1.mp3"; sourceTree = "<group>"; };
+		AA85D292200E822D0097442E /* MenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MenuScene.sks; sourceTree = "<group>"; };
+		AA85D294200E82D50097442E /* start-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "start-button.png"; sourceTree = "<group>"; };
+		AA85D296200E846F0097442E /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		AA85D298200E8FC00097442E /* achievement1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = achievement1.wav; sourceTree = "<group>"; };
+		AA85D29A200E93850097442E /* MagicParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MagicParticle.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +70,7 @@
 		AA85D25C200A9B870097442E = {
 			isa = PBXGroup;
 			children = (
+				AA85D28D200E79310097442E /* Assets.xcassets */,
 				AA85D267200A9B870097442E /* FlappyBird */,
 				AA85D266200A9B870097442E /* Products */,
 			);
@@ -60,6 +87,15 @@
 		AA85D267200A9B870097442E /* FlappyBird */ = {
 			isa = PBXGroup;
 			children = (
+				AA85D298200E8FC00097442E /* achievement1.wav */,
+				AA85D294200E82D50097442E /* start-button.png */,
+				AA85D290200E7B410097442E /* Explosion+1.mp3 */,
+				AA85D28C200E79310097442E /* FireParticle.sks */,
+				AA85D283200A9BE80097442E /* bg.png */,
+				AA85D284200A9BE90097442E /* flappy1.png */,
+				AA85D282200A9BE80097442E /* flappy2.png */,
+				AA85D280200A9BE80097442E /* pipe1.png */,
+				AA85D281200A9BE80097442E /* pipe2.png */,
 				AA85D268200A9B870097442E /* AppDelegate.swift */,
 				AA85D26A200A9B870097442E /* GameScene.sks */,
 				AA85D26C200A9B870097442E /* Actions.sks */,
@@ -69,6 +105,9 @@
 				AA85D275200A9B870097442E /* Assets.xcassets */,
 				AA85D277200A9B870097442E /* LaunchScreen.storyboard */,
 				AA85D27A200A9B870097442E /* Info.plist */,
+				AA85D292200E822D0097442E /* MenuScene.sks */,
+				AA85D296200E846F0097442E /* MenuViewController.swift */,
+				AA85D29A200E93850097442E /* MagicParticle.sks */,
 			);
 			path = FlappyBird;
 			sourceTree = "<group>";
@@ -133,10 +172,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA85D274200A9B870097442E /* Main.storyboard in Resources */,
+				AA85D29B200E93850097442E /* MagicParticle.sks in Resources */,
+				AA85D28E200E79310097442E /* FireParticle.sks in Resources */,
+				AA85D289200A9BE90097442E /* flappy1.png in Resources */,
+				AA85D295200E82D60097442E /* start-button.png in Resources */,
 				AA85D26B200A9B870097442E /* GameScene.sks in Resources */,
+				AA85D288200A9BE90097442E /* bg.png in Resources */,
+				AA85D286200A9BE90097442E /* pipe2.png in Resources */,
 				AA85D276200A9B870097442E /* Assets.xcassets in Resources */,
+				AA85D299200E8FC00097442E /* achievement1.wav in Resources */,
+				AA85D287200A9BE90097442E /* flappy2.png in Resources */,
 				AA85D279200A9B870097442E /* LaunchScreen.storyboard in Resources */,
+				AA85D291200E7B410097442E /* Explosion+1.mp3 in Resources */,
 				AA85D26D200A9B870097442E /* Actions.sks in Resources */,
+				AA85D28F200E79310097442E /* Assets.xcassets in Resources */,
+				AA85D285200A9BE90097442E /* pipe1.png in Resources */,
+				AA85D293200E822D0097442E /* MenuScene.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +201,7 @@
 				AA85D26F200A9B870097442E /* GameScene.swift in Sources */,
 				AA85D271200A9B870097442E /* GameViewController.swift in Sources */,
 				AA85D269200A9B870097442E /* AppDelegate.swift in Sources */,
+				AA85D297200E846F0097442E /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
