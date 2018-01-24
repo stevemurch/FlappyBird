@@ -12,8 +12,39 @@ import GameplayKit
 
 class MenuViewController: UIViewController {
     
+    
+    
+    @objc func startClicked()
+    {
+        print("START WAS CLICKED")
+        
+        if let view = self.view as! SKView? {
+            // Load the SKScene from 'GameScene.sks'
+            if let scene = SKScene(fileNamed: "GameScene") {
+                // Set the scale mode to scale to fit the window
+                scene.scaleMode = .aspectFill
+                
+                // Present the scene
+                view.presentScene(scene)
+            }
+            
+            view.ignoresSiblingOrder = true
+            
+            view.showsFPS = true
+            view.showsNodeCount = true
+        }
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(MenuViewController.startClicked),
+                                               name: Notification.Name(rawValue:"start_button_clicked"),
+                                               object: nil)
+        
+        
         
         if let view = self.view as! SKView? {
             // Load the SKScene from 'MenuScene.sks'
@@ -54,13 +85,12 @@ class MenuViewController: UIViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        // start
-        print("start")
         
-        //startGameSegue
         
-        performSegue(withIdentifier: "startGameSegue", sender: self)
+        
         
         
     }
+    
+    
 }

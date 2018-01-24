@@ -21,17 +21,17 @@
 		AA85D288200A9BE90097442E /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = AA85D283200A9BE80097442E /* bg.png */; };
 		AA85D289200A9BE90097442E /* flappy1.png in Resources */ = {isa = PBXBuildFile; fileRef = AA85D284200A9BE90097442E /* flappy1.png */; };
 		AA85D28E200E79310097442E /* FireParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = AA85D28C200E79310097442E /* FireParticle.sks */; };
-		AA85D28F200E79310097442E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA85D28D200E79310097442E /* Assets.xcassets */; };
 		AA85D291200E7B410097442E /* Explosion+1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AA85D290200E7B410097442E /* Explosion+1.mp3 */; };
 		AA85D293200E822D0097442E /* MenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = AA85D292200E822D0097442E /* MenuScene.sks */; };
 		AA85D295200E82D60097442E /* start-button.png in Resources */ = {isa = PBXBuildFile; fileRef = AA85D294200E82D50097442E /* start-button.png */; };
 		AA85D297200E846F0097442E /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA85D296200E846F0097442E /* MenuViewController.swift */; };
 		AA85D299200E8FC00097442E /* achievement1.wav in Resources */ = {isa = PBXBuildFile; fileRef = AA85D298200E8FC00097442E /* achievement1.wav */; };
 		AA85D29B200E93850097442E /* MagicParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = AA85D29A200E93850097442E /* MagicParticle.sks */; };
+		AA85D29D200FC6040097442E /* StartButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA85D29C200FC6040097442E /* StartButtonNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AA85D265200A9B870097442E /* FlappyBird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlappyBird.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA85D265200A9B870097442E /* FlappsieBird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlappsieBird.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA85D268200A9B870097442E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA85D26A200A9B870097442E /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		AA85D26C200A9B870097442E /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -47,13 +47,13 @@
 		AA85D283200A9BE80097442E /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		AA85D284200A9BE90097442E /* flappy1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flappy1.png; sourceTree = "<group>"; };
 		AA85D28C200E79310097442E /* FireParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FireParticle.sks; sourceTree = "<group>"; };
-		AA85D28D200E79310097442E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA85D290200E7B410097442E /* Explosion+1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Explosion+1.mp3"; sourceTree = "<group>"; };
 		AA85D292200E822D0097442E /* MenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MenuScene.sks; sourceTree = "<group>"; };
 		AA85D294200E82D50097442E /* start-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "start-button.png"; sourceTree = "<group>"; };
 		AA85D296200E846F0097442E /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		AA85D298200E8FC00097442E /* achievement1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = achievement1.wav; sourceTree = "<group>"; };
 		AA85D29A200E93850097442E /* MagicParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MagicParticle.sks; sourceTree = "<group>"; };
+		AA85D29C200FC6040097442E /* StartButtonNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +70,6 @@
 		AA85D25C200A9B870097442E = {
 			isa = PBXGroup;
 			children = (
-				AA85D28D200E79310097442E /* Assets.xcassets */,
 				AA85D267200A9B870097442E /* FlappyBird */,
 				AA85D266200A9B870097442E /* Products */,
 			);
@@ -79,7 +78,7 @@
 		AA85D266200A9B870097442E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AA85D265200A9B870097442E /* FlappyBird.app */,
+				AA85D265200A9B870097442E /* FlappsieBird.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +107,7 @@
 				AA85D292200E822D0097442E /* MenuScene.sks */,
 				AA85D296200E846F0097442E /* MenuViewController.swift */,
 				AA85D29A200E93850097442E /* MagicParticle.sks */,
+				AA85D29C200FC6040097442E /* StartButtonNode.swift */,
 			);
 			path = FlappyBird;
 			sourceTree = "<group>";
@@ -115,9 +115,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AA85D264200A9B870097442E /* FlappyBird */ = {
+		AA85D264200A9B870097442E /* FlappsieBird */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA85D27D200A9B870097442E /* Build configuration list for PBXNativeTarget "FlappyBird" */;
+			buildConfigurationList = AA85D27D200A9B870097442E /* Build configuration list for PBXNativeTarget "FlappsieBird" */;
 			buildPhases = (
 				AA85D261200A9B870097442E /* Sources */,
 				AA85D262200A9B870097442E /* Frameworks */,
@@ -127,9 +127,9 @@
 			);
 			dependencies = (
 			);
-			name = FlappyBird;
+			name = FlappsieBird;
 			productName = FlappyBird;
-			productReference = AA85D265200A9B870097442E /* FlappyBird.app */;
+			productReference = AA85D265200A9B870097442E /* FlappsieBird.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -148,7 +148,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AA85D260200A9B870097442E /* Build configuration list for PBXProject "FlappyBird" */;
+			buildConfigurationList = AA85D260200A9B870097442E /* Build configuration list for PBXProject "FlappsieBird" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -161,7 +161,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AA85D264200A9B870097442E /* FlappyBird */,
+				AA85D264200A9B870097442E /* FlappsieBird */,
 			);
 		};
 /* End PBXProject section */
@@ -185,7 +185,6 @@
 				AA85D279200A9B870097442E /* LaunchScreen.storyboard in Resources */,
 				AA85D291200E7B410097442E /* Explosion+1.mp3 in Resources */,
 				AA85D26D200A9B870097442E /* Actions.sks in Resources */,
-				AA85D28F200E79310097442E /* Assets.xcassets in Resources */,
 				AA85D285200A9BE90097442E /* pipe1.png in Resources */,
 				AA85D293200E822D0097442E /* MenuScene.sks in Resources */,
 			);
@@ -201,6 +200,7 @@
 				AA85D26F200A9B870097442E /* GameScene.swift in Sources */,
 				AA85D271200A9B870097442E /* GameViewController.swift in Sources */,
 				AA85D269200A9B870097442E /* AppDelegate.swift in Sources */,
+				AA85D29D200FC6040097442E /* StartButtonNode.swift in Sources */,
 				AA85D297200E846F0097442E /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,7 +342,7 @@
 				DEVELOPMENT_TEAM = 25CC72PWT3;
 				INFOPLIST_FILE = FlappyBird/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.stevemurch.FlappyBird;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stevemurch.FlappsieBird;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -357,7 +357,7 @@
 				DEVELOPMENT_TEAM = 25CC72PWT3;
 				INFOPLIST_FILE = FlappyBird/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.stevemurch.FlappyBird;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stevemurch.FlappsieBird;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -367,7 +367,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AA85D260200A9B870097442E /* Build configuration list for PBXProject "FlappyBird" */ = {
+		AA85D260200A9B870097442E /* Build configuration list for PBXProject "FlappsieBird" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA85D27B200A9B870097442E /* Debug */,
@@ -376,7 +376,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AA85D27D200A9B870097442E /* Build configuration list for PBXNativeTarget "FlappyBird" */ = {
+		AA85D27D200A9B870097442E /* Build configuration list for PBXNativeTarget "FlappsieBird" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA85D27E200A9B870097442E /* Debug */,

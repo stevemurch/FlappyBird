@@ -160,7 +160,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         bird = SKSpriteNode(texture:birdTexture)
         
-        bird.position = CGPoint(x: self.frame.midX, y: self.frame.midY)
+        var startingPosition = CGPoint(x: self.frame.midX, y: self.frame.midY)
+        bird.position = CGPoint(x: -500, y: self.frame.midY)
         bird.run(makeBirdFlap)
         
         bird.physicsBody = SKPhysicsBody(circleOfRadius: birdTexture.size().height / 2)
@@ -169,9 +170,15 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         bird.physicsBody!.contactTestBitMask = ColliderType.Object.rawValue
         bird.physicsBody!.categoryBitMask = ColliderType.Bird.rawValue
         bird.physicsBody!.collisionBitMask = ColliderType.Bird.rawValue
-        
+        bird.zPosition = 20
         
         self.addChild(bird)
+        
+        
+        let initialAction = SKAction.move(to:startingPosition, duration:1.5)
+        
+        self.bird.anchorPoint = CGPoint(x:0.5, y:0.5)
+        self.bird.run(initialAction)
         
         
         
@@ -208,8 +215,30 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 currentScore += 1
                 scoreLabel.text = String(currentScore)
                 run(achievementSound)
+                // remove that gap
+                
+                if (contact.bodyA.categoryBitMask == ColliderType.Gap.rawValue)
+                {
+                    let theGap = contact.bodyA.node! as SKNode
+                    self.removeChildren(in: [theGap])
+                } else
+                {
+                        let theGap = contact.bodyB.node! as SKNode
+                    self.removeChildren(in: [theGap])
+                }
+                
+                if (currentScore % 5 == 0)
+                {
+                    let rotateBirdAction = SKAction.rotate(byAngle: .pi*4, duration: 0.5)
+                    bird.run(rotateBirdAction)
+                }
+                
+                
                 return
             }
+            
+            
+            
             
             let burstPath = Bundle.main.path(
                 forResource: "MagicParticle", ofType: "sks")
@@ -236,6 +265,17 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             gameOverLabel.position = CGPoint(x: self.frame.midX, y: self.frame.midY)
             gameOverLabel.zPosition = 10
             
+            self.bird.physicsBody?.isDynamic = true
+            self.bird.physicsBody?.friction = 1
+            self.speed = 0.2
+            self.bird.physicsBody!.allowsRotation = true
+            
+            let rotateAction = SKAction.rotate(byAngle:.pi*6, duration:0.4)
+            self.bird.anchorPoint = CGPoint(x:0.5, y:0.5)
+            self.bird.run(rotateAction)
+            
+            shakeCamera(duration:2)
+            
             self.addChild(gameOverLabel)
             
             self.readyForNewGame = false
@@ -244,9 +284,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 //self.burstNode.removeFromParent()
                 
                 
+                
+                
                 self.readyForNewGame = true
                 self.gameOverLabel.text = "Tap to play again."
-                self.bird.physicsBody?.isDynamic = true
+                
+                
+                
             })
             
             
@@ -254,6 +298,25 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
     }
     
+    
+    func shakeCamera(duration:Float) {
+        let amplitudeX:Float = 10;
+        let amplitudeY:Float = 6;
+        let numberOfShakes = duration / 0.04;
+        var actionsArray:[SKAction] = [];
+        for _ in 1...Int(numberOfShakes) {
+            // build a new random shake and add it to the list
+            let moveX = Float(arc4random_uniform(UInt32(amplitudeX))) - amplitudeX / 2;
+            let moveY = Float(arc4random_uniform(UInt32(amplitudeY))) - amplitudeY / 2;
+            let shakeAction = SKAction.moveBy(x: CGFloat(moveX), y: CGFloat(moveY), duration: 0.02);
+            shakeAction.timingMode = SKActionTimingMode.easeOut;
+            actionsArray.append(shakeAction);
+            actionsArray.append(shakeAction.reversed());
+        }
+        
+        let actionSeq = SKAction.sequence(actionsArray);
+        bg.run(actionSeq);
+    }
     
     
     
